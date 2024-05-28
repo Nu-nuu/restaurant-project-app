@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/baseline_restaurant_24_nine"
+        android:label="Restaurant"
+        android:roundIcon="@drawable/baseline_restaurant_24_nine"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FinalProject"
+
+        tools:targetApi="31">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBni6-rtAKoLXppJwLZJTpLEfdCGtvRuK4" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.finalproject.activity.LoginActivity" />
+        <activity android:name="com.example.finalproject.activity.RegisterActivity" />
+
+        <activity android:name="com.example.finalproject.activity.admin.AdminHomePageActivity" />
+        <activity android:name="com.example.finalproject.activity.admin.StatusReservationActivity" />
+        <activity android:name="com.example.finalproject.activity.admin.UserManagerActivity" />
+        <activity android:name="com.example.finalproject.activity.admin.TableManagerActivity" />
+        <activity android:name="com.example.finalproject.activity.admin.CategoryManagerActivity" />
+        <activity android:name="com.example.finalproject.activity.admin.FoodManagerActivity" />
+
+
+
+
+        <activity android:name="com.example.finalproject.activity.member.MemberHomePageActivity" />
+        <activity android:name="com.example.finalproject.activity.member.ProfileMemberActivity" />
+        <activity android:name="com.example.finalproject.activity.member.ReservationHistoryActivity" />
+        <activity android:name="com.example.finalproject.activity.member.CreateReservationActivity" />
+        <activity android:name="com.example.finalproject.activity.member.ChooseTableActivity" />
+        <activity android:name="com.example.finalproject.activity.member.ChooseFoodActivity" />
+        <activity android:name="com.example.finalproject.activity.member.ModifyProfileActivity" />
+        <activity android:name="com.example.finalproject.activity.member.BillReservationActivity" />
+        <activity android:name="com.example.finalproject.activity.member.MapRestaurantActivity" />
+        <activity android:name="com.example.finalproject.activity.member.ErrorActivity" />
+        <activity android:name="com.example.finalproject.activity.member.SuccessfullyActivity" />
+        <activity android:name="com.example.finalproject.activity.member.NewsActivity" />
+
+        <activity android:name="com.example.finalproject.activity.member.ZaloPayActivity"
+            android:launchMode="singleTask"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="demozpdk"
+                    android:host="app" />
+            </intent-filter>
+        </activity>
+
+
+
+    </application>
+
+</manifest>

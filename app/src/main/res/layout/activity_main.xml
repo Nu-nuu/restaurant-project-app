@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- activity_member_home_page.xml -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_nine">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".activity.member.MemberHomePageActivity">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="398dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="-100dp"
+            android:src="@drawable/circles"
+            android:rotation="180"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="398dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="-70dp"
+            android:layout_marginTop="355dp"
+            android:layout_marginEnd="90dp"
+            android:rotation="-90"
+            android:src="@drawable/circles" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="398dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="-55dp"
+            android:src="@drawable/circles" />
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/baseline_restaurant_24_home"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linearProfile"
+            android:padding="16dp"
+            android:layout_marginTop="16dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello, We are Restaurant."
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/buttonLogin"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/baseline_login_24"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearIntro1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearProfile"
+            android:padding="16dp"
+            android:layout_marginTop="25dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Have a "
+                android:textSize="36sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reservation"
+                android:textSize="36sp"
+                android:textStyle="bold|italic"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" to "
+                android:textSize="36sp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearIntro2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearIntro1"
+            android:padding="16dp"
+            android:layout_marginTop="16dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="enjoy"
+                android:textSize="36sp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" the "
+                android:textSize="36sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Food"
+                android:textSize="36sp"
+                android:textStyle="bold|italic"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearFind"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_below="@id/linearIntro2"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:paddingLeft="16dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewCategory"
+                android:layout_width="376dp"
+                android:layout_height="100dp">
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearFind1"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_below="@id/linearFind"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            >
+            <TextView
+                android:id="@+id/textViewFood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hot Foods"
+                android:padding="16dp"
+                android:paddingStart="32dp"
+                android:paddingEnd="200dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/rounded_background"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/buttonLogin2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/baseline_table_restaurant_24"
+                    android:gravity="center"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewFood"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@id/linearFind1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="0dp"
+            android:clipToPadding="false"
+            android:paddingHorizontal="16dp" />
+
+        <TextView
+            android:id="@+id/textViewRestaurant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recyclerViewFood"
+            android:layout_marginTop="24dp"
+            android:text="Restaurants Near You"
+            android:padding="16dp"
+            android:paddingStart="32dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewRestaurant"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@id/textViewRestaurant"
+            android:layout_marginTop="8dp"
+            android:clipToPadding="false"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="16dp"
+            />
+
+    </RelativeLayout>
+
+</ScrollView>

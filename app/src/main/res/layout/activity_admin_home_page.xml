@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- activity_admin_home_page.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".activity.admin.AdminHomePageActivity">
+
+    <!-- Add your UI components for the admin home page activity here -->
+    <TextView
+        android:id="@+id/usernameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_marginBottom="8dp"
+        android:text="Username"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/phoneTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_below="@id/usernameTextView"
+        android:layout_marginBottom="8dp"
+        android:text="Phone"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/emailTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_below="@id/phoneTextView"
+        android:layout_marginBottom="8dp"
+        android:text="Email"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_below="@id/emailTextView"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/reservationButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manager Reservation"
+        android:layout_below="@id/logoutButton"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/userButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manager Users"
+        android:layout_below="@id/reservationButton"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/tableButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manager Tables"
+        android:layout_below="@id/userButton"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/categoryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manager Categories"
+        android:layout_below="@id/tableButton"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/foodButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manager Foods"
+        android:layout_below="@id/categoryButton"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

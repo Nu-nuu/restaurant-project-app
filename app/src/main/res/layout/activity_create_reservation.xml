@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- activity_create_reservation.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_nine">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="398dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-55dp"
+        android:src="@drawable/circles" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="398dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="-55dp"
+        android:src="@drawable/circles"
+        android:rotation="180"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="398dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-55dp"
+        android:src="@drawable/circles" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="398dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="-55dp"
+        android:src="@drawable/circles"
+        android:rotation="180"/>
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Reservation"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="#000000"
+         />
+
+    <LinearLayout
+        android:id="@+id/linearNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/titleTextView"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/guestNumberLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Guest Number: "
+            android:textSize="16sp"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/guestNumberEditText"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:backgroundTint="#000000"
+            android:textColor="#000000"
+            android:textColorHint="#000000" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/linearNum"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/startDateLabel"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="5dp"
+            android:text="Start Date: "
+            android:textSize="16sp"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/startDateEditText"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="DD/MM/YYYY  HH:mm"
+            android:focusable="false"
+            android:onClick="showStartDatePickerDialog"
+            android:backgroundTint="#000000"
+            android:textColor="#000000"
+            android:textColorHint="#000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearEnd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearStart"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/endDateLabel"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="5dp"
+            android:text="End Date: "
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/endDateEditText"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:hint="DD/MM/YYYY  HH:mm"
+            android:onClick="showEndDatePickerDialog"
+            android:backgroundTint="#000000"
+            android:textColor="#000000"
+            android:textColorHint="#000000" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/createReservationButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="220dp"
+        android:background="@drawable/button_background"
+        android:text="Choose Table"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="150dp"
+        android:background="@drawable/button_background"
+        android:text="Cancel"
+        android:textColor="#FFFFFF" />
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:src="@drawable/baseline_restaurant_24_create" />
+</RelativeLayout>

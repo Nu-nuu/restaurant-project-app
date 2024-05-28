@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- item_table_manager.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/tableNumberTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Table Number: [Replace with Table Number]"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/deleteButton"
+            android:layout_width="52dp"
+            android:layout_height="41dp"
+            android:src="@drawable/baseline_delete_24" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/capacityTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Capacity: [Replace with Capacity]" />
+
+    <TextView
+        android:id="@+id/statusTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Status: [Replace with Status]" />
+
+    <ImageButton
+        android:id="@+id/updateButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="end"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/baseline_system_update_alt_24" />
+
+</LinearLayout>
