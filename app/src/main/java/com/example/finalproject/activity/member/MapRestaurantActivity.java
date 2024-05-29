@@ -106,7 +106,7 @@ public class MapRestaurantActivity extends AppCompatActivity implements OnMapRea
     }
 
     private void fetchRoute(LatLng origin, LatLng destination) {
-        String apiKey = "AIzaSyBni6-rtAKoLXppJwLZJTpLEfdCGtvRuK4";
+        String apiKey = "";
         String requestUrl = "https://maps.googleapis.com/maps/api/directions/json?"
                 + "origin=" + origin.latitude + "," + origin.longitude
                 + "&destination=" + destination.latitude + "," + destination.longitude
